@@ -1,41 +1,46 @@
 # Project (template)
 
-# Exploring COVID-19 Vaccine Effectiveness
+# Broadband and Socio-economic demographics
 
-This fictional example is based on reality.
+Developed by DS5110 students at The Roux Institute, Northeastern University, Summer 2022.
+
+Data and guidance provided by Maine Connectivity Authority and comes as a continuation of our fellow DS 5010 spring 2022 class project.
+
+We used The US Census Bureau APIs for the socio-economic datasets.
 
 ## NOTE to students
 
 This repository provides a fictional example of a project proposal for DS5110, Summer 2022.
-It's based on the [vaccines project](http://ds5010/vaccines) completed by Portland students in 
+It's based on the [vaccines project](http://ds5010/vaccines) completed by Portland students in
 the Spring 2022 version of DS 5010.
-Their project was eventually put in a publicly accessible repository and included a 
+Their project was eventually put in a publicly accessible repository and included a
 github-pages (gh-pages) site: [ds5010.github.io/vaccines](ds5010.github.io/vaccines).
 You can use this repo as guidance for creating your own project proposal.
 Additional guidance is in the [course repo](https://github.com/ds5110/summer-2022/blob/main/projects/projects.md).
 
 ## Project partners
 
-* Student #1 (identify partner by name -- the entire team should use this partner's github-classroom repo for the project)
-* Student #2 (ditto)
-* Student #3 (ditto)
+- [Zheng Yin(Yune)](https://github.com/zyune)
+- Evrard Ngabirano
 
 ## Goal
 
-The project goal is to develop a predictive model for COVID-19 vaccine effectiveness 
-at the county level based on death rate and possibly other socioeconomic factors.
-We'll start by investigating the relationship between 
-vaccination rate and death rate. 
-We'll be careful to determine time-dependence, since vaccines were rolled out in May 2021 and 
-probably had their maximum effectiveness the following November, as mentioned
-in [this NPR story](https://www.npr.org/sections/health-shots/2021/12/05/1059828993/data-vaccine-misinformation-trump-counties-covid-death-rate), which is where we developed the idea for this project.
+The project goal is to develop an interpretation model for Tiers data of Maine at the county level based on poverty rate and possibly other socioeconomic factors.
+We'll start by digging deep in to the census data.
+Then we will investigating the relationship between
+tiers data with socio-economic data.
+The broadband access and socio-economic demographics varies across Maine, creating the need for county-level and state-level data visuals to provide support for the decision making body and MCA's projects.
 
 ## Data
 
 Primary sources of data will be CDC and Johns Hopkins university.
 
-* [CDC](https://data.cdc.gov/Vaccinations/COVID-19-Vaccinations-in-the-United-States-County)
-* [Johns Hopkins](https://github.com/CSSEGISandData/COVID-19)
+- [Small Area Income and Poverty Estimates (1989, 1993, 1995-2016)](https://www.census.gov/programs-surveys/saipe/about.html)
+- [state,School District level.](https://api.census.gov/data/timeseries/poverty/saipe/schdist/examples.html)
+- [Population Estimates and Projections ](https://www.census.gov/data/developers/data-sets/popest-popproj.html)
+- [Economic Census (2017, 2012, 2007, 2002)](https://www.census.gov/data/developers/data-sets/economic-census.2017.html)
+- [Maine Office of GIS](https://maine.hub.arcgis.com/datasets/ec1a999644cf4e128c84d207f6b8e2bc)
+- [Maine Connectivity Authority](https://www.maineconnectivity.org/)
 
 ## Stakeholder
 
@@ -44,16 +49,10 @@ would be willing to provide feedback on your prototypes.
 
 ## Preliminary result
 
-The figure shows vaccination rate versus population for each county in the U.S. 
-It was created using a CSV file downloaded from obtained from the CDC site listed above.
+You can see the family median income of Maine in county level. Deeper the blue is , Higher the family median income of county.
+It was created using a APi to get data from the Census site. Then I combine the data from census with Maine county border geojson data. You can download the [html page](https://github.com/zyune/broadband-final-ds5110/raw/family_median_income_demo/demo/family_median_income/family_median_income.html) here.
 
-![](figs/fig1.png)
-
-Recreate this figure with the following command:
-
-```
-python src/app.py
-```
+![output](img/fig1.png)
 
 ## Project plan
 
