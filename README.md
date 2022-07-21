@@ -2,11 +2,11 @@
 
 # Broadband and Socio-economic demographics
 
-Developed by DS5110 students at The Roux Institute, Northeastern University, Summer 2022.
+Developed by DS5110 students at [The Roux Institute](https://roux.northeastern.edu/), Northeastern University, Summer 2022.
 
-Data and guidance provided by Maine Connectivity Authority and comes as a continuation of our fellow DS 5010 spring 2022 class project.
+Data and guidance provided by [Maine Connectivity Authority](https://www.maineconnectivity.org/) and comes as a continuation of our fellow [DS 5010 spring 2022 class project](https://ds5010.github.io/broadband/).
 
-We used The US Census Bureau APIs for the socio-economic datasets.
+We used [The US Census Bureau APIs](https://www.census.gov/data/developers/data-sets.html) for the socio-economic datasets.
 
 ## NOTE to students
 
@@ -21,7 +21,7 @@ Additional guidance is in the [course repo](https://github.com/ds5110/summer-202
 ## Project partners
 
 - [Zheng Yin(Yune)](https://github.com/zyune)
-- Evrard Ngabirano
+- [Evrard Ngabirano](https://github.com/ebibia)
 
 ## Goal
 
