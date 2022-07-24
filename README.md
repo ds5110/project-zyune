@@ -53,6 +53,9 @@ You can see the family median income of Maine in county level. Deeper the blue i
 It was created using a APi to get data from the Census site. Then I combine the data from census with Maine county border geojson data. You can download the [html page](https://github.com/zyune/broadband-final-ds5110/raw/family_median_income_demo/demo/family_median_income/family_median_income.html) here.
 
 ![output](img/fig1.png)
+You can see the family median income of Maine in cumberland county.
+You can download the [html page](https://github.com/ds5110/project-zyune/blob/main/demo/family_median_income_zipcode_level/family_median_income_Cumberland_percentile.html) here
+![output](img/cumberland_mfi_percentile.png)
 
 ## Project plan
 
