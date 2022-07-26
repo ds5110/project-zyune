@@ -8,13 +8,13 @@ Data and guidance provided by [Maine Connectivity Authority](https://www.maineco
 
 We used [The US Census Bureau APIs](https://www.census.gov/data/developers/data-sets.html) for the socio-economic datasets.
 
-## NOTE to students
+## Overview
 
 This repository provides a fictional example of a project proposal for DS5110, Summer 2022.
-It's based on the [vaccines project](http://ds5010/vaccines) completed by Portland students in
+It's based on the [broadband project](https://github.com/ds5010/broadband) completed by Portland students in
 the Spring 2022 version of DS 5010.
 Their project was eventually put in a publicly accessible repository and included a
-github-pages (gh-pages) site: [ds5010.github.io/vaccines](ds5010.github.io/vaccines).
+github-pages (gh-pages) site: [ds5010.github.io/broadband/](https://ds5010.github.io/broadband/).
 You can use this repo as guidance for creating your own project proposal.
 Additional guidance is in the [course repo](https://github.com/ds5110/summer-2022/blob/main/projects/projects.md).
 
@@ -42,10 +42,12 @@ Primary sources of data will be CDC and Johns Hopkins university.
 - [Maine Office of GIS](https://maine.hub.arcgis.com/datasets/ec1a999644cf4e128c84d207f6b8e2bc)
 - [Maine Connectivity Authority](https://www.maineconnectivity.org/)
 
+
+
 ## Stakeholder
 
-This could be a faculty member or someone from an organization with an interest in this problem who
-would be willing to provide feedback on your prototypes.
+[Maine Connectivity Authority](https://www.maineconnectivity.org/)
+
 
 ## Preliminary result
 
@@ -59,4 +61,5 @@ You can download the [html page](https://github.com/ds5110/project-zyune/blob/ma
 
 ## Project plan
 
-[plan.md](plan.md)
+
+For Project Plan Milestones / Timelines / Roles and Responsibilities: [plan.md](plan.md)
