@@ -60,7 +60,7 @@ def build_county_boundary_dist(Maine_County):
     return maine_county_dict
 
 
-def store_zipfile_to_file_v2(county_name, maine_counties_dict, zipcdoe_gdf):
+def store_zipfile_to_file_v2(county_name, maine_counties_dict, zipcdoe_gdf, socialType):
     gdf_list = []
     for index, i in zipcdoe_gdf.iterrows():
         if i.centroid_column.within(maine_counties_dict[county_name]):
@@ -82,8 +82,9 @@ def get_social_value_for_zipcode_level_data_by_main_county(socialType):
     print(Maine_zipcode_level.columns)
     zipcdoe_gdf = set_zipcode_geojson_to_centroid(Maine_zipcode_level)
     for county_name in maine_counties_dict:
-        store_zipfile_to_file_v2(county_name, maine_counties_dict, zipcdoe_gdf)
+        store_zipfile_to_file_v2(
+            county_name, maine_counties_dict, zipcdoe_gdf, socialType)
 
 
-socialType = 'B19113_001E'
+socialType = 'B16010_041E'
 get_social_value_for_zipcode_level_data_by_main_county(socialType)
