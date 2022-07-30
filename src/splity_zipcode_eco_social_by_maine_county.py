@@ -26,7 +26,7 @@ def read_census_data(social, zipcode_start, zipcode_end):  # social=B19113_001E 
     df1 = pd.DataFrame(res[1:], columns=columns)
     df1['zip code tabulation area'] = df1['zip code tabulation area'].astype(
         int)
-    df1['B19113_001E'] = df1['B19113_001E'].astype(int)
+    df1[social] = df1[social].astype(int)
     df1 = df1.loc[df1['zip code tabulation area'] <= zipcode_end]
     df1 = df1.loc[df1['zip code tabulation area'] >= zipcode_start]
     return df1
@@ -60,7 +60,7 @@ def build_county_boundary_dist(Maine_County):
     return maine_county_dict
 
 
-def store_zipfile_to_file_v2(county_name, maine_counties_dict):
+def store_zipfile_to_file_v2(county_name, maine_counties_dict, zipcdoe_gdf):
     gdf_list = []
     for index, i in zipcdoe_gdf.iterrows():
         if i.centroid_column.within(maine_counties_dict[county_name]):
@@ -68,7 +68,7 @@ def store_zipfile_to_file_v2(county_name, maine_counties_dict):
     gdf = gpd.GeoDataFrame(gdf_list)
     del gdf['centroid_column']
     gdf.set_geometry('geometry')
-    gdf.to_file('./county/'+county_name+'/'+county_name+socialType+'.geojson')
+    gdf.to_file('../county/'+county_name+'/'+county_name+socialType+'.geojson')
 
 
 def get_social_value_for_zipcode_level_data_by_main_county(socialType):
@@ -79,9 +79,10 @@ def get_social_value_for_zipcode_level_data_by_main_county(socialType):
     gdf = read_zipcode_geojson()
     sensus = read_census_data(socialType, 3901, 4992)
     Maine_zipcode_level = merge_census_and_geojson(sensus, gdf)
-    zipcdoe_gdf = set_zipcode_geojson_to_centroid(gdf)
+    print(Maine_zipcode_level.columns)
+    zipcdoe_gdf = set_zipcode_geojson_to_centroid(Maine_zipcode_level)
     for county_name in maine_counties_dict:
-        store_zipfile_to_file_v2(county_name, maine_counties_dict)
+        store_zipfile_to_file_v2(county_name, maine_counties_dict, zipcdoe_gdf)
 
 
 socialType = 'B19113_001E'
