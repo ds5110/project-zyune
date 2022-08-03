@@ -51,7 +51,7 @@
               </li>
             </ul>
             <a
-              href="http://github.com/ds5010/broadband"
+              href="https://github.com/ds5110/project-zyune"
               class="nav-item align-right mx-2"
             >
               <img src="github.png" width="32px" />
@@ -171,7 +171,7 @@
       // Load the notebook, rendering the value of each cell into the provided DOM node.
       new Runtime().module(notebook, (name) => {
         if (name === "viewof counties") {
-          //        return new Inspector(document.querySelector("#observable-counties"));
+          return new Inspector(document.querySelector("#observable-counties"));
         }
         if (name === "map") {
           return new Inspector(document.querySelector("#observable-map"));
