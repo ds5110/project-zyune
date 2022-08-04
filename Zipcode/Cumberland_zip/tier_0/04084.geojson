@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "v_layer": "Tier 0 (No Address Range)", "v_project": "Global", "v_plan": "Global", "v_created_time": "", "v_last_edited_time": "", "Street Name": "Rose Ln", "Global ID": "{A09EA3CC-589A-40FB-9F03-6EB6782E06C7}", "mat_total_cost": null, "lab_total_cost": null, "mat_label": null, "mat_description": null, "mat_link": null, "mat_part_number": null, "mat_cost": null, "mat_cost_metric": null, "mat_manufacturer": null, "mat_vendor": null, "lab_label": null, "lab_description": null, "lab_cost": null, "lab_fixed_cost": null, "lab_cost_metric": null, "vetro_id": "96dea800-d1c7-4b9d-b711-115b38f3eed1" }, "geometry": { "type": "LineString", "coordinates": [ [ -70.544154407, 43.734100874 ], [ -70.544253226, 43.734509395 ] ] } }
+]
+}

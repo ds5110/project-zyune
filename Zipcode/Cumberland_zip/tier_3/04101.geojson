@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "v_layer": "Tier 3 (25/3 -50/10)", "v_project": "Global", "v_plan": "Global", "v_created_time": "", "v_last_edited_time": "", "Street Name": "City Ctr", "Global ID": "{5827F23E-6A74-4F70-8289-BB10401328D1}", "mat_total_cost": null, "lab_total_cost": null, "mat_label": null, "mat_description": null, "mat_link": null, "mat_part_number": null, "mat_cost": null, "mat_cost_metric": null, "mat_manufacturer": null, "mat_vendor": null, "lab_label": null, "lab_description": null, "lab_cost": null, "lab_fixed_cost": null, "lab_cost_metric": null, "vetro_id": "217ab59c-78cb-4094-b851-7b76193516d3" }, "geometry": { "type": "LineString", "coordinates": [ [ -70.256393264, 43.657305164 ], [ -70.256806814, 43.657251097 ], [ -70.257224132, 43.65721049 ] ] } }
+]
+}
