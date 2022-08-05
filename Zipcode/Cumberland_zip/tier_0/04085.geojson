@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "v_layer": "Tier 0 (No Address Range)", "v_project": "Global", "v_plan": "Global", "v_created_time": "", "v_last_edited_time": "", "Street Name": "Middle Road Ext", "Global ID": "{1E3AA70E-D4F1-40B1-8A2E-1878F8151D91}", "mat_total_cost": null, "lab_total_cost": null, "mat_label": null, "mat_description": null, "mat_link": null, "mat_part_number": null, "mat_cost": null, "mat_cost_metric": null, "mat_manufacturer": null, "mat_vendor": null, "lab_label": null, "lab_description": null, "lab_cost": null, "lab_fixed_cost": null, "lab_cost_metric": null, "vetro_id": "fb8670e1-2a41-4f1a-8d8b-075f78087728" }, "geometry": { "type": "LineString", "coordinates": [ [ -70.643750693, 43.786744852 ], [ -70.643861253, 43.786714912 ], [ -70.643950988, 43.786681519 ] ] } }
+]
+}

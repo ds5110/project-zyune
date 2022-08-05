@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "v_layer": "Tier 0 (No Address Range)", "v_project": "Global", "v_plan": "Global", "v_created_time": "", "v_last_edited_time": "", "Street Name": "S Wildmere Acres", "Global ID": "{EB298C94-172C-4C31-89FD-C2F946AF6CA0}", "mat_total_cost": null, "lab_total_cost": null, "mat_label": null, "mat_description": null, "mat_link": null, "mat_part_number": null, "mat_cost": null, "mat_cost_metric": null, "mat_manufacturer": null, "mat_vendor": null, "lab_label": null, "lab_description": null, "lab_cost": null, "lab_fixed_cost": null, "lab_cost_metric": null, "vetro_id": "dcbe4bd3-b072-4f42-8abf-56fcc112dfb0" }, "geometry": { "type": "LineString", "coordinates": [ [ -70.632677027, 44.014123863 ], [ -70.632650086, 44.014027123 ], [ -70.632335377, 44.013729823 ], [ -70.632303604, 44.013704679 ], [ -70.632266286, 44.013683886 ], [ -70.632224539, 44.013668063 ], [ -70.632179627, 44.013657696 ], [ -70.632132911, 44.013653096 ], [ -70.632085793, 44.013654399 ] ] } }
+]
+}

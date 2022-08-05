@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "v_layer": "Tier 4 (50/10 - 100/100)", "v_project": "Global", "v_plan": "Global", "v_created_time": "", "v_last_edited_time": "", "Street_Nam": "Downwind Blvd", "Global_ID": "{B5BE37D7-9B33-413F-AEA9-77CFD6F65DBD}", "mat_total_cost": null, "lab_total_cost": null, "mat_label": null, "mat_description": null, "mat_link": null, "mat_part_number": null, "mat_cost": null, "mat_cost_metric": null, "mat_manufacturer": null, "mat_vendor": null, "lab_label": null, "lab_description": null, "lab_cost": null, "lab_fixed_cost": null, "lab_cost_metric": null, "vetro_id": "52f89277-af54-474a-b95d-968da31338c5" }, "geometry": { "type": "LineString", "coordinates": [ [ -69.231996681, 44.815172257 ], [ -69.232357176, 44.816323935 ], [ -69.233074066, 44.818899744 ], [ -69.233158985, 44.819204825 ] ] } }
+]
+}

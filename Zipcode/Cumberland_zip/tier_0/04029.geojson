@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "v_layer": "Tier 0 (No Address Range)", "v_project": "Global", "v_plan": "Global", "v_created_time": "", "v_last_edited_time": "", "Street Name": "Sebago Rd - Route 11/114", "Global ID": "{0DA256D2-905B-41AE-A2FD-1F7BDA447B7E}", "mat_total_cost": null, "lab_total_cost": null, "mat_label": null, "mat_description": null, "mat_link": null, "mat_part_number": null, "mat_cost": null, "mat_cost_metric": null, "mat_manufacturer": null, "mat_vendor": null, "lab_label": null, "lab_description": null, "lab_cost": null, "lab_fixed_cost": null, "lab_cost_metric": null, "vetro_id": "b6d6c8b7-0a27-4f99-bee6-d5b394e9cebf" }, "geometry": { "type": "LineString", "coordinates": [ [ -70.627123731, 43.896483114 ], [ -70.627114227, 43.896573104 ], [ -70.627114057, 43.896574174 ] ] } }
+]
+}
