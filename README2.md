@@ -1,13 +1,17 @@
-##1
+## 1 Combine data
+
 RUN `python splity_zipcode_eco_social_by_maine_county.py`
 This read data from census.gov api and combine data with zipcode geography of Maine.
-##2
+
+## 2 filter into zipcode
 
 RUN `python tiers_to_zipcdoe_divistion.py`
 
 It filter tier0 to tier5 in cumberland to zipcode level geography.
 ![output](img/Zipcode_directory.png)
-##3
+
+## 3 prepare for analysis
+
 RUN `python retrieve_data_for_analysis.py`
 
 This .py file try to calculate the number of tiers in zipcode area of cumberland county
@@ -22,7 +26,8 @@ ZCTA5CE10	total_population	num_of_bachelor_degree_higer	num_of_internet_subscrib
 4	4017	515	200	230	50833	0	0	108	46	13	0
 ```
 
-##4 calculate weighted average internet speed score
+## 4 calculate weighted average internet speed score
+
 `RUN python calculate_average_internet_speed_score.py`
 
 ```
