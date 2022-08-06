@@ -68,7 +68,7 @@ def store_zipfile_to_file_v2(county_name, maine_counties_dict, zipcdoe_gdf, soci
     gdf = gpd.GeoDataFrame(gdf_list)
     del gdf['centroid_column']
     gdf.set_geometry('geometry')
-    gdf.to_file('../county/'+county_name+'/'+county_name+socialType+'.geojson')
+    gdf.to_file('./county/'+county_name+'/'+county_name+socialType+'.geojson')
 
 
 def get_social_value_for_zipcode_level_data_by_main_county(socialType):
@@ -86,5 +86,5 @@ def get_social_value_for_zipcode_level_data_by_main_county(socialType):
             county_name, maine_counties_dict, zipcdoe_gdf, socialType)
 
 
-socialType = 'B16010_041E'
+socialType = 'B28006_014E'
 get_social_value_for_zipcode_level_data_by_main_county(socialType)
