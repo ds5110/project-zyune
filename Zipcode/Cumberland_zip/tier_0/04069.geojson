@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "v_layer": "Tier 0 (No Address Range)", "v_project": "Global", "v_plan": "Global", "v_created_time": "", "v_last_edited_time": "", "Street Name": "Orchard Ln", "Global ID": "{0F5F2F85-B8BA-4438-A8FC-1F2368F062B3}", "mat_total_cost": null, "lab_total_cost": null, "mat_label": null, "mat_description": null, "mat_link": null, "mat_part_number": null, "mat_cost": null, "mat_cost_metric": null, "mat_manufacturer": null, "mat_vendor": null, "lab_label": null, "lab_description": null, "lab_cost": null, "lab_fixed_cost": null, "lab_cost_metric": null, "vetro_id": "02d51468-bc95-4960-95f1-0d06144fa833" }, "geometry": { "type": "LineString", "coordinates": [ [ -70.156861343, 43.926464193 ], [ -70.156741245, 43.926573253 ] ] } }
+]
+}

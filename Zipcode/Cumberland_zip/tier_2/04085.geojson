@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "v_layer": "Tier 2 (10/1 - 25/3)", "v_project": "Global", "v_plan": "Global", "v_created_time": "", "v_last_edited_time": "", "Street Name": "Arthur Dr", "Global ID": "{A2DD7890-83D4-412C-A933-C2037942324A}", "mat_total_cost": null, "lab_total_cost": null, "mat_label": null, "mat_description": null, "mat_link": null, "mat_part_number": null, "mat_cost": null, "mat_cost_metric": null, "mat_manufacturer": null, "mat_vendor": null, "lab_label": null, "lab_description": null, "lab_cost": null, "lab_fixed_cost": null, "lab_cost_metric": null, "vetro_id": "abb6d53d-29b3-4c3a-8393-aa140d5d454f" }, "geometry": { "type": "LineString", "coordinates": [ [ -70.634889549, 43.745430528 ], [ -70.634774229, 43.745339127 ], [ -70.634487342, 43.744987943 ], [ -70.6339125, 43.744293962 ], [ -70.633733403, 43.744017408 ], [ -70.633609384, 43.74385261 ], [ -70.633554246, 43.743736351 ], [ -70.633610332, 43.743487946 ], [ -70.6336862, 43.743279774 ] ] } }
+]
+}

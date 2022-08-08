@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "v_layer": "Tier 4 (50/10 - 100/100)", "v_project": "Global", "v_plan": "Global", "v_created_time": "", "v_last_edited_time": "", "Street_Nam": "Mill Rd", "Global_ID": "{AE2DF6D4-AA81-4A89-846F-9A5478BFDEC0}", "mat_total_cost": null, "lab_total_cost": null, "mat_label": null, "mat_description": null, "mat_link": null, "mat_part_number": null, "mat_cost": null, "mat_cost_metric": null, "mat_manufacturer": null, "mat_vendor": null, "lab_label": null, "lab_description": null, "lab_cost": null, "lab_fixed_cost": null, "lab_cost_metric": null, "vetro_id": "488a1238-2ec2-4b30-be9c-93e333ba3d31" }, "geometry": { "type": "LineString", "coordinates": [ [ -69.086866444, 45.019880311 ], [ -69.086357838, 45.020587341 ], [ -69.085649312, 45.021560085 ], [ -69.084878478, 45.022532865 ], [ -69.084102477, 45.023514644 ], [ -69.083628955, 45.024118119 ], [ -69.083576705, 45.024194672 ], [ -69.083585085, 45.024230673 ], [ -69.083587082, 45.024244174 ], [ -69.08362879, 45.024275652 ], [ -69.083921416, 45.024473478 ], [ -69.084444664, 45.024779159 ] ] } }
+]
+}
