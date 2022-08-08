@@ -1,10 +1,10 @@
 import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
-df = pd.read_csv('./Zipcode/number_of_tiers_cumberlamd_zipcode.csv')
-df['weighted_average_internet_score'] = 0
-df = df[df.median_household_income != -666666666]
+df = pd.read_csv('../Zipcode/number_of_tiers_cumberlamd_zipcode.csv')
+# df = df[df.median_household_income != -666666666]
 weighted_average_internet_score_list = []
+print(len(df))
 for index, row in df.iterrows():
     weighted_average_internet_score = (row['num_tier_1']*5+row['num_tier_2']*17.5+row['num_tier_3']
                                        * 37.5+row['num_tier_4']*75+row['num_tier_5']*150)/(5+17.5+37.5+75+150)
@@ -13,5 +13,4 @@ for index, row in df.iterrows():
 print(weighted_average_internet_score_list)
 df['weighted_average_internet_score'] = pd.DataFrame(
     weighted_average_internet_score_list)
-df = df.drop(columns='geometry')
-df.to_csv('./Zipcode/weighted_average_internet_score.csv')
+df.to_csv('../Zipcode/weighted_average_internet_score.csv', index=False)

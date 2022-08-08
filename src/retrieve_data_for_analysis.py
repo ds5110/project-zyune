@@ -2,13 +2,13 @@ import pandas as pd
 import geopandas as gpd
 
 B16010_041E = gpd.read_file(
-    './county/Cumberland/CumberlandB16010_041E.geojson')
+    '../county/Cumberland/CumberlandB16010_041E.geojson')
 B19019_001E = gpd.read_file(
-    './county/Cumberland/CumberlandB19019_001E.geojson')
+    '../county/Cumberland/CumberlandB19019_001E.geojson')
 B28003_004E = gpd.read_file(
-    './county/Cumberland/CumberlandB28003_004E.geojson')
+    '../county/Cumberland/CumberlandB28003_004E.geojson')
 B01001_001E = gpd.read_file(
-    './county/Cumberland/CumberlandB01001_001E.geojson')
+    '../county/Cumberland/CumberlandB01001_001E.geojson')
 df = pd.DataFrame()
 df['ZCTA5CE10'] = B01001_001E['ZCTA5CE10']
 df['total_population'] = B01001_001E['B01001_001E']
@@ -37,5 +37,4 @@ for tiers in tier_list:
             'Cumberland', '0'+str(zipcode), tiers))
     new_column_name = 'num_'+tiers
     df[new_column_name] = pd.DataFrame(tier_list)
-df['geometry'] = B01001_001E['geometry']
-df.to_csv('./Zipcode/number_of_tiers_cumberlamd_zipcode.csv', index=False)
+df.to_csv('../Zipcode/number_of_tiers_cumberlamd_zipcode.csv', index=False)
