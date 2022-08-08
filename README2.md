@@ -21,12 +21,18 @@ STATEFP10	ZCTA5CE10	GEOID10	CLASSFP10	MTFCC10	FUNCSTAT10	ALAND10	AWATER10	INTPTL
 
 ![output](img/presentation1.png)
 
-## 2 filter into zipcode
+## 2 filter Tiers data into zipcode
 
 RUN `python tiers_to_zipcdoe_divistion.py`
 
-It filter tier0 to tier5 in cumberland to zipcode level geography.
+It filter tier0 to tier5 in cumberland to zipcode level.
+
+### If you want to explore the tiers data in zipcode level of cumberland county, go for following
+
+[Tier_4 zipcode level playground](https://colab.research.google.com/drive/1corVtfYj05I1rcOtEuzQVHkZqCurNzHO#scrollTo=KZSTk184h45K)
+
 ![output](img/cumberland_tier4.png)
+
 ![output](img/portland_downtown_tier4.png)
 
 ## 3 prepare for analysis
