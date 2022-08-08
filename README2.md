@@ -59,6 +59,10 @@ ZCTA5CE10	total_population	num_of_bachelor_degree_higer	num_of_internet_subscrib
 
 `RUN python calculate_average_internet_speed_score.py`
 
+### Explore this csv file
+
+[calculate weighted average of internet speed score](https://github.com/ds5110/project-zyune/blob/main/Zipcode/weighted_average_internet_score.csv)
+
 ```
 	ZCTA5CE10	total_population	num_of_bachelor_degree_higer	num_of_internet_subscribe	median_household_income	num_tier_0	num_tier_1	num_tier_2	num_tier_3	num_tier_4	num_tier_5	weighted_average_internet_score
 0	4003	214	80	113	89097	2	5	0	0	168	0	44.298246
