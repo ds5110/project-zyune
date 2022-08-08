@@ -15,12 +15,11 @@ df['total_population'] = B01001_001E['B01001_001E']
 df['num_of_bachelor_degree_higer'] = B16010_041E['B16010_041E']
 df['num_of_internet_subscribe'] = B28003_004E['B28003_004E']
 df['median_household_income'] = B19019_001E['B19019_001E']
-df['geometry'] = B01001_001E['geometry']
 
 
 def find_number_of_tiers_according_to_zipcode(county_name, zipcode, tier_num):
     try:
-        directory = './Zipcode/'+county_name+'_zip/'+tier_num+'/'+zipcode+'.geojson'
+        directory = '../Zipcode/'+county_name+'_zip/'+tier_num+'/'+zipcode+'.geojson'
         print(directory)
         gdf = gpd.read_file(directory)
         return len(gdf)
