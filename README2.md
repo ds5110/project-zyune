@@ -74,7 +74,7 @@ ZCTA5CE10	total_population	num_of_bachelor_degree_higer	num_of_internet_subscrib
 
 ## 5 plot relationship between several features
 
-`python src/scatterplot_sav_fig.py`
+`python scatterplot_sav_fig.py`
 
 ### median house hold income versus internet score
 
