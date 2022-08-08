@@ -25,7 +25,7 @@ STATEFP10	ZCTA5CE10	GEOID10	CLASSFP10	MTFCC10	FUNCSTAT10	ALAND10	AWATER10	INTPTL
 
 RUN `python tiers_to_zipcdoe_divistion.py`
 
-It filter tier0 to tier5 in cumberland to zipcode level.
+This python file filter tier0 to tier5 in cumberland to zipcode level.
 
 ### If you want to explore the tiers data in zipcode level of cumberland county, go for following
 
@@ -41,6 +41,10 @@ RUN `python retrieve_data_for_analysis.py`
 
 This .py file try to calculate the number of tiers in zipcode area of cumberland county
 and combine it with the social economy data.
+
+### Explore this csv file
+
+[data combine tiers and gemography data](https://github.com/ds5110/project-zyune/blob/main/Zipcode/number_of_tiers_cumberlamd_zipcode.csv)
 
 ```
 ZCTA5CE10	total_population	num_of_bachelor_degree_higer	num_of_internet_subscribe	median_household_income	num_tier_0	num_tier_1	num_tier_2	num_tier_3	num_tier_4	num_tier_5
