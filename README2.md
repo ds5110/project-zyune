@@ -35,7 +35,7 @@ This python file filter tier0 to tier5 in cumberland to zipcode level.
 
 ![output](img/portland_downtown_tier4.png)
 
-## 3 prepare for analysis
+## 3 prepare data for analysis
 
 RUN `python retrieve_data_for_analysis.py`
 
