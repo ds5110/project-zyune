@@ -80,7 +80,7 @@ ZCTA5CE10	total_population	num_of_bachelor_degree_higer	num_of_internet_subscrib
 
 ![output](img/income_internet.png)
 
-### number of bachelor degree or higher versus number of internet subscribe
+### rate of bachelor degree or higher versus rate of internet subscribe
 
 ![output](img/edu_internet_subscribe.png)
 
