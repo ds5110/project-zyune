@@ -3,8 +3,8 @@ import pandas as pd
 tierNumber = 'tier_4'
 countyname = 'Cumberland'
 B16010_041E = gpd.read_file(
-    './county/'+countyname+'/'+countyname+'B16010_041E.geojson')
-tier = gpd.read_file('./county/'+countyname+'/' +
+    '../county/'+countyname+'/'+countyname+'B16010_041E.geojson')
+tier = gpd.read_file('../county/'+countyname+'/' +
                      countyname+'_'+tierNumber+'.geojson')
 
 
@@ -36,11 +36,11 @@ def divide_county_by_zipcode(countyname, zipcode):
         gdf = gdf.drop(columns=['centroid_column'])
 #         print(gdf.head())
         gdf.set_geometry('geometry')
-        gdf.to_file('./Zipcode/'+countyname+'_zip/' +
+        gdf.to_file('../Zipcode/'+countyname+'_zip/' +
                     tierNumber+'/0'+str(zipcode)+'.geojson')
     else:
         df = pd.DataFrame(gdf_list)
-        df.to_csv('./Zipcode/'+countyname+'_zip/' +
+        df.to_csv('../Zipcode/'+countyname+'_zip/' +
                   tierNumber+'/0'+str(zipcode)+'.csv')
 
 

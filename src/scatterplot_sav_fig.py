@@ -1,18 +1,18 @@
 import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
-df = pd.read_csv('./Zipcode/weighted_average_internet_score.csv')
-
+df = pd.read_csv('../Zipcode/weighted_average_internet_score.csv')
+df = df[df['median_household_income'] != -666666666]
 income_internet = sns.regplot(data=df, x='median_household_income',
                               y='weighted_average_internet_score')
 fig = income_internet.get_figure()
-plt.savefig('./img/income_internet.png')
+plt.savefig('../img/income_internet.png')
 plt.close()
-edu_internet_subscribe = sns.regplot(data=df, x='num_of_bachelor_degree_higer',
-                                     y='num_of_internet_subscribe')
+edu_internet_subscribe = sns.regplot(data=df, x='education_rate',
+                                     y='subscribe_rate')
 
 fig = edu_internet_subscribe.get_figure()
-plt.savefig('./img/edu_internet_subscribe.png')
+plt.savefig('../img/edu_internet_subscribe.png')
 plt.close()
 
 fig, ax = plt.subplots()
@@ -29,5 +29,5 @@ ax.scatter(data=df, x='num_of_internet_subscribe',
 internet_subscribe_internet_score = sns.regplot(data=df, x="num_of_internet_subscribe", y='weighted_average_internet_score',
                                                 scatter=False, ci=20, order=1, color='blue')
 fig = internet_subscribe_internet_score.get_figure()
-plt.savefig('./img/internet_subscribe_internet_score')
+plt.savefig('../img/internet_subscribe_internet_score')
 plt.close()
