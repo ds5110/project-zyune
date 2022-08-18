@@ -65,9 +65,9 @@ I did several things in this python file.
 
 - 1.read geo dataframe of Maine zipcodes
 - 2.compose sensus.gov url and return the dataframe containing data from sensus.gov
-- 3. combine the dataframes from step1 ans step2
-- 4. split the dataframe from step 4 according to the Maine county boundary
-- 5. save them into county file according to county name.
+- 3.combine the dataframes from step1 ans step2
+- 4.split the dataframe from step 4 according to the Maine county boundary
+- 5.save them into county file according to county name.
 
 [example of sensus API, it shows population of 04101](https://api.census.gov/data/2020/acs/acs5?get=NAME,B01001_001E&for=zip%20code%20tabulation%20area:04101)
 
