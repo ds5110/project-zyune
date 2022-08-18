@@ -2,18 +2,33 @@ import geopandas as gpd
 
 
 def read_zipcode_geojson():
+    """read geography data from a url, returns a geo dataframe of Maine zipcodes
+
+    Returns:
+        geodataframe: returns a geo dataframe of Maine zipcodes
+    """
     import geopandas as gpd
     url = 'https://raw.githubusercontent.com/OpenDataDE/State-zip-code-GeoJSON/master/me_maine_zip_codes_geo.min.json'
     gdf = gpd.read_file(url)
     gdf['ZCTA5CE10'] = gdf['ZCTA5CE10'].astype('int')
     gdf = gdf.sort_values(by=['ZCTA5CE10'])
-    gdf = gdf.drop(index=[405])  # the data come from census don't have those
+    gdf = gdf.drop(index=[405])  # the data come from census don't have this
     gdf['zip code tabulation area'] = gdf['ZCTA5CE10']
     gdf.drop('ZCTA5CE10', axis=1)
     return gdf
 
 
 def read_census_data(social, zipcode_start, zipcode_end):  # social=B19113_001E 4992 3901
+    """compose sensus.gov url and return the dataframe containing data from sensus.gov
+
+    Args:
+        social (dataframe): parameter of sensus.gov parameter(we use it to compose the url in line 37)
+        zipcode_start (int): first number of zipcode (Maine zipcode starts at 3901 ends at 4992 )
+        zipcode_end (int): last number of zipcode
+
+    Returns:
+        dataframe: return a dataframe made out of  census api 
+    """
     import pandas as pd
     import requests
     res = []
@@ -33,12 +48,26 @@ def read_census_data(social, zipcode_start, zipcode_end):  # social=B19113_001E 
 
 
 def merge_census_and_geojson(sensus, geo_data):
+    """combine sensus dataframe with maine zipcode geodataframe
+
+    Args:
+        sensus (dataframe): sensus data frame
+        geo_data (geodataframe): zipcode geo dataframe
+
+    Returns:
+        geodataframe: returns the combined data frame
+    """
     Maine_zipcode_level = geo_data.merge(
         sensus, on='zip code tabulation area', how='left')
     return Maine_zipcode_level
 
 
 def read_county_boundary_geojson():
+    """read Maine county boundary data 
+
+    Returns:
+        geodataframe: returns the geodataframe of Maine county boundary 
+    """
     Maine_County = gpd.read_file(
         'https://raw.githubusercontent.com/ds5010/broadband/main/src/county_boundaries/Maine_County_Boundary_Polygons_Dissolved_Feature.geojson')
     # drop two useless columns that we are not gonna use
@@ -68,7 +97,7 @@ def store_zipfile_to_file_v2(county_name, maine_counties_dict, zipcdoe_gdf, soci
     gdf = gpd.GeoDataFrame(gdf_list)
     del gdf['centroid_column']
     gdf.set_geometry('geometry')
-    gdf.to_file('./county/'+county_name+'/'+county_name+socialType+'.geojson')
+    gdf.to_file('../county/'+county_name+'/'+county_name+socialType+'.geojson')
 
 
 def get_social_value_for_zipcode_level_data_by_main_county(socialType):
