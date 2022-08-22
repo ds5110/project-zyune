@@ -8,16 +8,6 @@ Data and guidance provided by [Maine Connectivity Authority](https://www.maineco
 
 We used [The US Census Bureau APIs](https://www.census.gov/data/developers/data-sets.html) for the socio-economic datasets.
 
-## Overview
-
-This repository provides a fictional example of a project proposal for DS5110, Summer 2022.
-It's based on the [broadband project](https://github.com/ds5010/broadband) completed by Portland students in
-the Spring 2022 version of DS 5010.
-Their project was eventually put in a publicly accessible repository and included a
-github-pages (gh-pages) site: [ds5010.github.io/broadband/](https://ds5010.github.io/broadband/).
-You can use this repo as guidance for creating your own project proposal.
-Additional guidance is in the [course repo](https://github.com/ds5110/summer-2022/blob/main/projects/projects.md).
-
 ## Project partners
 
 - [Zheng Yin(Yune)](https://github.com/zyune)
